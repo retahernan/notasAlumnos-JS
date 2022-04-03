@@ -127,7 +127,6 @@ function mostrarAlumnos() {
         divAlumno.appendChild(imgAlumno);
         divAlumno.appendChild(tituloAlumno);
         divAlumno.appendChild(notaAlumno);
-        divAlumno.appendChild(btn);
 
         contenedorAlumnos.appendChild(divAlumno);
     }
