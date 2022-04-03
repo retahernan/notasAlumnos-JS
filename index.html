@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Alumnos</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- link BS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor-alumnos-nuevos">
+            <div class="card-nuevo">
+                <img class="imagen-alumno" src="./images/person.jpg" alt="Alumno nuevo">
+                <input type="text" id="nombreAlumnoNuevo" placeholder="Nombre del Alumno.." required>
+                <input type="text" id="notaAlumnoNuevo" placeholder="Nota del Alumno.." required>
+                <label for="imgAlumnoNuevo">Imagen del alumno</label><br>
+                <div>
+                    <label for="fuente">Seleccionar fuente de imagen</label>
+                    <select id="fuente">
+                        <option value="pc">PC</option>
+                        <option value="pokemon">Pokemon</option>
+                    </select>
+                </div>
+                <input type="file" onchange="previewFile()">
+                <input type="search" id="search" placeholder="Nombre pokemon.." disabled><br>
+                <button id="btn-nuevo">Agregar alumno</button>
+            </div>
+            <div class="notas-promedio">
+                <div class="botones">
+                    <button id="btn-PromedioNotas">Mostrar Promedio Notas</button>
+                    <button id="btn-notaMayor">Mostrar Nota Mayor</button>
+                    <button id="btn-notaMenor">Mostrar Nota Menor</button>
+                </div>
+                <div id="contenedor-notas">
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="contenedor">
+        <div class="contenedor">
+            <h1 class="titulo">Alumnos</h1>
+        </div>
+        <div class="contenedor-alumnos">
+
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

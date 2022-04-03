@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2B2D42;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.contenedor{
+    margin: 0 auto;
+    max-width: 900px;
+}
+ 
+ .titulo {
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+    font-size: 2.5rem;
+}
+.contenedor-alumnos-nuevos{
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contenedor-alumnos{
+    margin-top: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card-nuevo{
+    width: 50%;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+    
+}
+.card {
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+}
+.notas-promedio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #000;
+    color: #000;
+    background: transparent;
+  }
+  button:hover:after {
+    top: 0;
+    left: 0;
+  }
+  button:after {
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    transition: 0.2s;
+    background-color: #80ed99;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+.imagen-alumno {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+ h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
